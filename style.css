@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #ffffff;
+    --accent-color: #8c7ae6;
+    --bg-dark: #0f172a;
+    --font-main: 'Outfit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--bg-dark);
+    color: var(--primary-color);
+    overflow-x: hidden;
+    line-height: 1.6;
+    /* Enable smooth scrolling for nav links natively */
+    scroll-behavior: smooth;
+}
+
+/* Navbar Pure CSS Scroll Animation */
+@keyframes navbar-scrolled {
+    to {
+        background: rgba(0, 0, 0, 0.95);
+        padding: 0.8rem 0;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.navbar {
+    padding: 1.5rem 0;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: transparent;
+    z-index: 1000;
+
+    /* Modern CSS Scroll-Driven Animation */
+    animation: navbar-scrolled linear both;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* Sticky Parallax Core */
+.sticky-parallax-item {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    clip-path: inset(0);
+}
+
+.sticky-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.sticky-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.sticky-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+h1.display-1 {
+    font-size: clamp(2.5rem, 12vw, 6.5rem);
+    text-transform: uppercase;
+    text-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Spacer Sections */
+.spacer {
+    position: relative;
+    padding: 120px 0;
+    background-color: #ffffff;
+    color: #0f172a;
+    z-index: 20;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.spacer.bg-dark {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+}
+
+/* Pure CSS Reveal Animations */
+@keyframes reveal-in {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text,
+.img-reveal {
+    /* Modern CSS Scroll-Driven Animation */
+    animation: reveal-in linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+footer {
+    position: relative;
+    z-index: 50;
+    background: black;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .spacer {
+        padding: 80px 0;
+    }
+}
