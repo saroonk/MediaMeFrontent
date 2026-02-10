@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MediaMe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        body {
+            background-color: #000;
+            /* Match the dark theme */
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            /* Ensure navbar is visible */
+            backdrop-filter: blur(10px);
+        }
+
+
+
+
+        .contact-page-spacer {
+            height: 120px;
+            /* Space for fixed navbar */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="assets/images/logo.png" alt="MediaMe Logo" class="navbar-logo">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About
+                            <i class="fas fa-chevron-down ms-1 dropdown-arrow"></i></a>
+                    </li>
+                    <li class="nav-item dropdown mega-menu">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Services
+                            <i class="fas fa-chevron-down ms-1 dropdown-arrow"></i></a>
+                        <div class="dropdown-menu mega-menu-content p-4">
+                            <div class="container-fluid">
+                                <div class="row g-4">
+                                    <div class="col-lg">
+                                        <h6 class="mega-menu-title">ADVERTISING</h6>
+                                        <ul class="list-unstyled mega-menu-list">
+                                            <li><a href="#">Brand Strategy & Communication Planning</a></li>
+                                            <li><a href="#">Media Planning & Buying</a></li>
+                                            <li><a href="#">Creative & Content Development</a></li>
+                                            <li><a href="#">Omnichannel Campaign</a></li>
+                                            <li><a href="#">Experiential Marketing & Brand Activations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg">
+                                        <h6 class="mega-menu-title">DIGITAL MEDIA</h6>
+                                        <ul class="list-unstyled mega-menu-list">
+                                            <li><a href="#">Digital Marketing</a></li>
+                                            <li><a href="#">Social Media Marketing</a></li>
+                                            <li><a href="#">Search Engine Optimization (SEO)</a></li>
+                                            <li><a href="#">Pay Per Click</a></li>
+                                            <li><a href="#">Lead Generation</a></li>
+                                            <li><a href="#">Email Marketing</a></li>
+                                            <li><a href="#">Digital Influencer</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg">
+                                        <h6 class="mega-menu-title">BRANDING</h6>
+                                        <ul class="list-unstyled mega-menu-list">
+                                            <li><a href="#">Brand Engagement</a></li>
+                                            <li><a href="#">Planned Rollouts</a></li>
+                                            <li><a href="#">Visual Identity</a></li>
+                                            <li><a href="#">Brand Voice</a></li>
+                                            <li><a href="#">Brand Strategy</a></li>
+                                            <li><a href="#">Brand Framework</a></li>
+                                            <li><a href="#">Data and Insights</a></li>
+                                            <li><a href="#">Creative Design and Concepts</a></li>
+                                            <li><a href="#">Branding and Identity Design</a></li>
+                                            <li><a href="#">Advertising and Marketing Materials</a></li>
+                                            <li><a href="#">Packaging Design</a></li>
+                                            <li><a href="#">Web and Digital Design</a></li>
+                                            <li><a href="#">Illustration and Motion Graphics</a></li>
+                                            <li><a href="#">Environmental and Experiential Design</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg">
+                                        <h6 class="mega-menu-title">WEBSITE / MOBILE APPS</h6>
+                                        <ul class="list-unstyled mega-menu-list">
+                                            <li><a href="#">Website Design & Development</a></li>
+                                            <li><a href="#">Website Design and Branding</a></li>
+                                            <li><a href="#">Web Application Development</a></li>
+                                            <li><a href="#">E-commerce Web Development</a></li>
+                                            <li><a href="#">CMS Development</a></li>
+                                            <li><a href="#">WordPress Development</a></li>
+                                            <li><a href="#">UI/UX Design</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg">
+                                        <h6 class="mega-menu-title">MEDIA PRODUCTIONS</h6>
+                                        <ul class="list-unstyled mega-menu-list">
+                                            <li><a href="#">Corporate Video</a></li>
+                                            <li><a href="#">Commercial Video</a></li>
+                                            <li><a href="#">2D | 3D Animation Video</a></li>
+                                            <li><a href="#">Podcast Video</a></li>
+                                            <li><a href="#">Testimonial Video</a></li>
+                                            <li><a href="#">Brand Video</a></li>
+                                            <li><a href="#">Event Video</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Project <i
+                                class="fas fa-chevron-down ms-1 dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Film Production</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="#">Creative Design</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">View All Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages
+                            <i class="fas fa-chevron-down ms-1 dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Blog
+                            <i class="fas fa-chevron-down ms-1 dropdown-arrow"></i></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Film Production</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="#">Creative Design</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">View All Projects</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3 active" href="#">Contact</a></li>
+                </ul>
+                <!-- Social Icons (Mobile) -->
+                <div class="social-icons d-lg-none mt-3">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-app-store"></i></a>
+                </div>
+            </div>
+
+            <!-- Social Icons (Desktop) -->
+            <div class="social-icons d-none d-lg-flex ms-4">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-app-store"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer -->
+    <div class="contact-page-spacer"></div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container p-5">
+            <div class="row g-0">
+                <!-- Left Column: Contact Info (White) -->
+                <div class="col-lg-5 contact-info-col">
+                    <h2 class="contact-header-lg">CONTACT</h2>
+
+                    <div class="contact-details-block">
+                        <span class="contact-label">OUR ADDRESS</span>
+                        <p class="contact-text">
+                            99 Roving St., Big City, Pku<br>
+                            Rlau, Indonesia
+                        </p>
+                    </div>
+
+                    <div class="contact-details-block">
+                        <span class="contact-label">CALL US</span>
+                        <p class="contact-text">
+                            +123-234-1234<br>
+                            <a href="mailto:hello@awesomesite.com" class="contact-link">hello@awesomesite.com</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-details-block">
+                        <span class="contact-label">VISIT US</span>
+                        <a href="mailto:hello@awesomesite.com"
+                            class="contact-link contact-text">hello@awesomesite.com</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form (Dark) -->
+                <div class="col-lg-7 contact-form-col">
+                    <h3 class="form-header">SEND US A MESSAGE</h3>
+                    <p class="form-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                        luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="custom-input-group">
+                                    <label class="custom-label">Your First Name</label>
+                                    <input type="text" class="custom-input">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="custom-input-group">
+                                    <label class="custom-label">Your Last Name</label>
+                                    <input type="text" class="custom-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="custom-input-group">
+                                    <label class="custom-label">Your Company Name</label>
+                                    <input type="text" class="custom-input">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="custom-input-group">
+                                    <label class="custom-label">Your Company Email</label>
+                                    <input type="email" class="custom-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-input-group">
+                            <label class="custom-label">Email</label>
+                            <input type="email" class="custom-input">
+                        </div>
+
+                        <label class="custom-label">Message</label>
+                        <textarea class="custom-input" rows="1"></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row gy-5">
+                <!-- Brand Column -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="MediaMe" class="footer-logo">
+                        </a>
+                        <p class="footer-text">Elevating brands through cinematic storytelling and world-class
+                            production. We bring your vision to life.</p>
+                    </div>
+                </div>
+
+                <!-- Explore Column -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#section1">About</a></li>
+                        <li><a href="index.html#section2">Work</a></li>
+                        <li><a href="index.html#section3">Insights</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect Column -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">Connect</h5>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2026 MediaMe Production. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

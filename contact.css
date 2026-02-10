@@ -1,0 +1,160 @@
+/* =========================================
+   Contact Section Styles (Split Layout)
+   ========================================= */
+.contact-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Split Columns */
+.contact-info-col {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form-col {
+    background-color: #080808;
+    /* Deep black/dark grey */
+    color: #ffffff;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Typography */
+.contact-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.contact-header-lg {
+    font-size: 3.5rem;
+    font-weight: 300;
+    /* Thinner, elegant look */
+    margin-bottom: 60px;
+    line-height: 1;
+}
+
+.contact-details-block {
+    margin-bottom: 40px;
+}
+
+.contact-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.contact-link {
+    color: #000000;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-link:hover {
+    opacity: 0.7;
+}
+
+/* Form Styles */
+.form-header {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.form-subtext {
+    font-size: 0.95rem;
+    opacity: 0.6;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.custom-input-group {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.custom-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+    color: white;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    border-radius: 0;
+}
+
+.custom-input:focus {
+    outline: none;
+    border-bottom-color: white;
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+}
+
+.custom-label {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+
+    .contact-info-col,
+    .contact-form-col {
+        padding: 60px 30px;
+    }
+
+    .contact-header-lg {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+}
+
+/* Submit Button */
+.contact-submit-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 15px 40px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.contact-submit-btn:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
