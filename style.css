@@ -707,7 +707,7 @@ body {
     }
 }
 
-.animate-on-scroll-left,
+/* .animate-on-scroll-left,
 .animate-on-scroll-right,
 .parallax-entrance-animation {
     opacity: 0;
@@ -724,16 +724,11 @@ body {
 
 .parallax-entrance-animation {
     transform: translateY(50px) scale(0.9);
-}
+} */
 
-.animate-on-scroll-left.reveal,
-.animate-on-scroll-right.reveal,
-.parallax-entrance-animation.reveal {
-    opacity: 1 !important;
-    transform: translate(0) scale(1) !important;
-}
 
-/* Modern Scroll-Driven Enhancement */
+
+
 @supports (animation-timeline: view()) {
     .animate-on-scroll-left {
         animation: slide-in-left linear both;
