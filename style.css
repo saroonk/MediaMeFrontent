@@ -44,6 +44,8 @@ body {
 
 .navbar.scrolled {
     /* background: var(--bg-dark); */
+    background-color: rgba(0, 0, 0, 0.8);
+
     padding: 1.8rem 0;
     backdrop-filter: blur(45px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
