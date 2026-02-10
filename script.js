@@ -79,23 +79,3 @@ if ($('.testimonials-carousel').length > 0) {
 // Observe all elements with animation classes
 
 // Prevent clicks inside mega-menu from closing the dropdown on mobile
-$(document).on('click', '.mega-menu .dropdown-menu', function (e) {
-    if (window.innerWidth < 992) {
-        e.stopPropagation();
-    }
-});
-
-// Mega Menu Mobile Accordion
-$(document).on('click', '.mega-menu-title', function (e) {
-    if (window.innerWidth < 992) {
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-
-        const $list = $(this).next('.mega-menu-list');
-        $(this).toggleClass('active');
-        $list.stop().slideToggle(300);
-
-        return false;
-    }
-});

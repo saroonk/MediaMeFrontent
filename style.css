@@ -407,7 +407,7 @@ body {
     width: auto;
     height: auto;
     position: absolute;
-    border: 3px solid red;
+   
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -758,6 +758,7 @@ body {
 .services-section {
     padding: 100px 0;
     background: var(--bg-dark);
+    overflow-x: clip;
 }
 
 .services-grid {
@@ -871,6 +872,10 @@ h1.display-1 {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.6;
 }
+
+
+
+
 
 /* Elite Team Section Styles */
 .team-section {
