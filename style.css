@@ -426,7 +426,7 @@ body {
     max-width: 1000px;
     position: relative;
     z-index: 5;
-    opacity: 0;
+    opacity: 1;
 }
 
 #heroCarousel {
@@ -436,7 +436,7 @@ body {
 }
 
 
-.carousel-item.active .hero-content {
+/* .carousel-item.active .hero-content {
     animation: smoothFadeUp 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
@@ -452,7 +452,7 @@ body {
         transform: translateY(0);
         filter: blur(0);
     }
-}
+} */
 
 .max-w-600 {
     max-width: 600px;
@@ -738,11 +738,11 @@ body {
         animation-range: entry 10% cover 40%;
     }
 
-    .parallax-entrance-animation {
+    /* .parallax-entrance-animation {
         animation: fade-up-zoom linear both;
         animation-timeline: view();
         animation-range: entry 0% cover 50%;
-    }
+    } */
 }
 
 /* Services Grid Styles */
