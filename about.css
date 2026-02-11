@@ -1,0 +1,102 @@
+:root {
+    --primary-color: #ffffff;
+    --accent-orange: #ff8c00;
+    --bg-dark: #000000;
+    --bg-grey: #1a1a1a; /* Adjusted for better contrast than #333 */
+    --text-light: #f4f4f4;
+    --font-main: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+}
+
+/* Typography Helpers */
+.text-orange { color: var(--accent-orange); }
+.italic-style { font-style: italic; }
+.small-tracking { letter-spacing: 3px; font-size: 0.8rem; }
+.tracking-widest { letter-spacing: 5px; }
+
+/* Sections */
+.py-100 { padding: 100px 0; }
+
+/* Navbar */
+.navbar { transition: 0.3s; padding: 20px 0; }
+.nav-link { font-weight: 300; letter-spacing: 1px; margin: 0 15px; }
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    margin-top: 5rem;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+}
+
+.max-w-500 { max-width: 500px; }
+
+.scroll-indicator .line {
+    width: 2px;
+    height: 60px;
+    background-color: var(--accent-orange);
+    margin: 15px 0 0 25px;
+}
+
+/* Image Effects */
+.grayscale {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.grayscale:hover { filter: grayscale(0%); }
+
+.img-frame {
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid var(--accent-orange);
+}
+
+/* Cards */
+.card-custom {
+    background: #0a0a0a;
+    border: 1px solid #222;
+    padding: 60px 40px;
+    height: 100%;
+    transition: 0.3s;
+}
+.card-custom:hover {
+    border-color: var(--accent-orange);
+}
+
+.icon-box { font-size: 2rem; }
+
+/* Quote */
+.quote-text { font-size: 2.5rem; line-height: 1.4; max-width: 900px; margin: 0 auto; }
+.orange-divider { width: 80px; height: 3px; background-color: var(--accent-orange); }
+
+/* Buttons */
+.btn-orange {
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+.btn-outline-light { border-radius: 0; }
+
+/* Footer Links */
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-1 { font-size: 4rem; }
+    .quote-text { font-size: 1.8rem; }
+    .py-100 { padding: 60px 0; }
+}
