@@ -984,6 +984,16 @@ h1.display-1 {
     transform: translateX(8px);
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Spacer Sections */
 .spacer {
     position: relative;
@@ -1295,3 +1305,18 @@ footer {
     color: rgba(255, 255, 255, 0.4);
     font-size: 0.85rem;
 }
+
+
+
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.nav-link:focus,
+.dropdown-toggle:focus,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
