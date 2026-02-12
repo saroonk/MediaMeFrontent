@@ -1,0 +1,84 @@
+
+
+body {
+
+    letter-spacing: 0.5px;
+}
+
+/* Typography Helpers */
+.text-orange { color: var(--accent-orange); }
+.small-tracking { letter-spacing: 3px; font-size: 0.8rem; }
+.hero-title { font-size: clamp(3rem,8vw,8rem) !important;line-height: 0.9; }
+
+/* Sections */
+.py-100 { padding: clamp(40px,10vw,120px) 0; }
+.bg-dark-variant { background-color: #050505; }
+
+/* Hero Section */
+.sub-service-hero {
+    height: 100vh;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+    border-bottom: 1px solid #222;
+}
+
+@media (max-width:796px) {
+    .sub-service-hero {
+        height: 80vh !important;
+    }
+    
+}
+.orange-bar { width: 60px; height: 4px; background: var(--accent-orange); }
+
+/* Intro Text */
+.intro-text { font-size: 2.2rem; line-height: 1.4; color: #ccc; }
+
+/* Pillars */
+.pillar-box { transition: 0.3s ease; }
+.pillar-box:hover { background: #0a0a0a; }
+
+/* Case Study */
+.case-study-section { height: 600px; overflow: hidden; margin-top: 50px; }
+.case-card {
+    background: rgba(20, 20, 20, 0.95);
+    border-left: 4px solid var(--accent-orange);
+    margin-top: 100px;
+    position: relative;
+    z-index: 10;
+}
+.grayscale { filter: grayscale(100%); transition: 0.7s ease; }
+.case-study-section:hover .grayscale { filter: grayscale(0%); }
+
+/* Buttons */
+.btn-orange {
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+.btn-orange:hover { background-color: #e67e00; transform: translateY(-2px); }
+
+/* Animations */
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+@keyframes pulse-animation {
+    0% { transform: translateY(0); opacity: 0.5; }
+    50% { transform: translateY(10px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.5; }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-title { font-size: 4rem; }
+    .intro-text { font-size: 1.5rem; }
+    .case-study-section { height: auto; }
+    .case-card { margin-top: 0; }
+    .pillar-box { border-right: none !important; border-bottom: 1px solid #333; }
+}
+
+
+
+.text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--accent-orange);
+}

@@ -44,10 +44,10 @@ body {
 
 .navbar.scrolled {
     /* background: var(--bg-dark); */
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8) !important;
 
     padding: 1.8rem 0;
-    backdrop-filter: blur(45px);
+    backdrop-filter: blur(45px) !important;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* border-bottom: 10px solid red; */
 }
